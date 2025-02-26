@@ -58,12 +58,13 @@ autoload -Uz compinit
 compinit
 # alias
 alias ls="ls --color"
+alias grep="grep --color=auto"
 
 # fzf
 eval "$(fzf --zsh)"
 
 # export PATH="$HOME/.local/bin:$PATH"
-export EDITOR=vim
+export EDITOR=nvim
 
 function y() {
 	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
